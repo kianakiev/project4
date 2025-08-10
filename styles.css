@@ -1,0 +1,39 @@
+
+:root{
+  --paper:#fffdf7;
+  --ink:#222;
+  --accent:#2d6a4f;
+  --accent-2:#a44a3f;
+  --rule: rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{ margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Lora', serif; line-height:1.6; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;}
+header.site-header{ padding:1rem; border-bottom:1px solid var(--rule);
+  background:linear-gradient(180deg, rgba(45,106,79,.10), transparent);}
+.brand{display:flex; align-items:center; gap:.75rem; flex-wrap:wrap;}
+.brand h1{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.75rem; margin:0;}
+.badge{width:36px;height:36px;border-radius:50%;background:var(--accent); box-shadow:0 1px 3px rgba(0,0,0,.2) inset;}
+nav.top, nav.bottom{ display:flex; gap:.85rem; flex-wrap:wrap;}
+nav.top a, nav.bottom a{ text-decoration:none; padding:.45rem .8rem; border-radius:999px; border:1px solid rgba(45,106,79,.25);
+  background:#fff; color:var(--accent); font-weight:600;}
+nav.top a[aria-current="page"]{ background:rgba(45,106,79,.08); }
+main{ max-width:50em; margin:1.5rem auto; padding:0 1rem; text-align:left; }
+h1.chapter{ font-family:'Cormorant Garamond', serif; font-size:2.3rem; margin:1rem 0 .25rem; }
+h2.sub{ font-family:'Cormorant Garamond', serif; font-size:1.2rem; color:#42cef5; margin:.1rem 0 1rem; }
+p{ margin:0 0 1.05rem; font-size:1.06rem; }
+img.float-left{ float:left; max-width:42%; height:auto; margin:0 1rem 1rem 0; }
+img.float-right{ float:right; max-width:42%; height:auto; margin:0 0 1rem 1rem; }
+figure{ margin:0 0 1rem; }
+figcaption{ font-size:.9rem; color:#f542d4; }
+p.lede{ font-size:1.12rem; font-style:italic; }
+footer.site-footer{ border-top:1px solid var(--rule); padding:1.1rem 1rem 2rem;
+  background:linear-gradient(0deg, rgba(0,0,0,.03), transparent); color:#333; }
+.footer-inner{ max-width:50em; margin:0 auto; display:flex; justify-content:space-between; gap:.75rem 1rem; flex-wrap:wrap; align-items:center; }
+.small{ font-size:.92rem; }
+.hero{ display:flex; gap:1.25rem; align-items:center; flex-wrap:wrap; padding:1.2rem 1rem; border:1px solid var(--rule); border-radius:1rem;
+  background:linear-gradient(90deg, rgba(45,106,79,.08), rgba(164,74,63,.06));}
+.hero img{ max-width:170px; border-radius:.75rem; }
+.hero h1{ margin:0; font-size:2.5rem; }
+.hero .cta{ display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.35rem; }
