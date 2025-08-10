@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alice's Adventures in Wonderland- E-book</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Internal stylesheet (overrides add a different look on the Intro page) */
+.hero{
+  display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap;
+  padding:1.2rem 1rem; border:1px dashed rgba(0,0,0,.15); border-radius:1rem;
+  background:linear-gradient(90deg, rgba(210,180,140,.15), rgba(91,122,149,.12));
+}
+.hero img{ max-width:160px; height:auto; border-radius:.75rem; }
+.hero h1{ margin:.2rem 0 0; font-size:2.4rem; }
+.cta{ margin-top:.25rem; display:flex; gap:.5rem; flex-wrap:wrap; }
+.cta a{ font-weight:600; }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <span class="logo" aria-hidden="true"></span>
+    <h1>Alice's Adventure in Wonderland</h1>
+  </div>
+  <nav class="top" aria-label="Primary">
+    <a href="index.html" aria-current="page">Intro</a>
+    <a href="chapter1.html">Chapter 1</a>
+    <a href="chapter2.html">Chapter 2</a>
+    <a href="chapter3.html">Chapter 3</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <img src="alice_1.png" alt="The White Rabbit checks his pocket watch. Tenniel illustration." />
+    <div>
+      <h1 class="chapter">Alice's Adventures in Wonderland E-book</h1>
+      <p>Three chapters from <em>Alice's Adventures in Wonderland</em></p>
+      <div class="cta">
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <nav class="bottom" aria-label="Footer navigation">
+    </nav>
+    <div class="small">© 2025 Kalina I for BATECH189. • Source text &amp; images: public domain • Fonts: Google Fonts.</div>
+  </div>
+</footer>
+</body>
+</html>
